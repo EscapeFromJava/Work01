@@ -17,11 +17,11 @@ public class Work01 {
         else if (x>-1 && x<0 && y<0 && y>-1 && x*x+y*y<1){
             System.out.println("Точка попала в зону M3");
         }
+        else if (y==0 || y==-x || (x==0 && y<=0 && y>=-1) || y==x*x || x*x+y*y==1){
+            System.out.println("Точка попала на линию разграничения");
+        }
         else if (x*x+y*y<1 && x!=y){
             System.out.println("Точка попала в зону M4");
-        }
-        else if (y!=x && y==x*x || x*x+y*y==1 || y==-x ){
-            System.out.println("Точка попала на линию разграничения");
         }
         else {
             System.out.println("Точка попала за круг");
