@@ -17,7 +17,7 @@ public class Work01 {
         else if (x>-1 && x<0 && y<0 && y>-1 && x*x+y*y<1){
             System.out.println("Точка попала в зону M3");
         }
-        else if ((y==0 && x>-1 && x<1) || y==-x || (x==0 && y<=0 && y>=-1) || y==x*x || x*x+y*y==1){
+        else if ((y==0 && x>-1 && x<1) || (y==-x && x!=1 && y!=1) || (x==0 && y<=0 && y>=-1) || (y==x*x && x!=1 && y!=1)|| x*x+y*y==1){
             System.out.println("Точка попала на линию разграничения");
         }
         else if (x*x+y*y<1 && x!=y){
